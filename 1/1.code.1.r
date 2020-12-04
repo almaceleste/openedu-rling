@@ -1,1 +1,0 @@
-polyroot(c(3,-2*pi,1))
