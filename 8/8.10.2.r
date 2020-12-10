@@ -2,7 +2,7 @@
 
 library(tidyverse)
 
-bnc <- read_csv('./8/bnc_pron.csv')
+bnc <- read_csv('datasets/bnc_pron.csv')
 
 rm1 <- lm(data = bnc, P1 ~ P2)
 rm2 <- lm(data = bnc, P1 ~ P2 + Reg)

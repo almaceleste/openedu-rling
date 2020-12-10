@@ -12,13 +12,19 @@ chisq.test(c(419, 2155), p = c(97, 567))
 t.test(df, mu = e)
 
 # choksy bimon
-expected_uvul  <- 97/567 # WALS
+expected_uvul  <- 97 / 567 # WALS
 n <- 2155
 observed_uvul  <- 419
 binom.test(observed_uvul, n, expected_uvul)
 
 # choksy chisq
-df <- data.frame(row.names = c("WALS", "PHOIBLE"), uvul = c(97, 419), no_uvul = c(567-97, 2155-419))
+df <-
+    data.frame(
+        row.names = c("WALS", "PHOIBLE"),
+        uvul = c(97, 419),
+        no_uvul = c(567 - 97, 2155 - 419)
+)
+
 df
 chisq.test(df)
 
@@ -31,4 +37,3 @@ o <- 419 / 2155
 chisq.test(c(419, (2155 - 419)), p = c(e, e), rescale.p = TRUE)
 
 chisq <- (o - e)^2 / e
-

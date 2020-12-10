@@ -10,7 +10,7 @@
 
 library(tidyverse)
 
-sexuality <- read_csv('./8/orientation.csv')
+sexuality <- read_csv('datasets/orientation.csv')
 
 model1 <- lm(
     formula = perceived.as.homo ~ age + average.f0.Hz + f0.range.Hz +

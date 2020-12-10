@@ -5,7 +5,7 @@
 
 library(tidyverse)
 
-diversity <- read_tsv('./8/language_diversity.csv')
+diversity <- read_tsv('datasets/language_diversity.csv')
 
 model <- lm(data = diversity, Population ~ Langs)
 

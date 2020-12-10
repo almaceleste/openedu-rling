@@ -4,10 +4,11 @@
 # предлоги "в" и "на" в русском и польском. Проанализируйте датасет и определите
 # в каком языке распределение падежей при обоих предлогах статистически значимо
 # различается?
+# https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/slavic_case_alternation.csv
 
 library(tidyverse)
 
-x <- read_tsv('https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/slavic_case_alternation.csv')
+x <- read_tsv('datasets/slavic_case_alternation.csv')
 
 rus <- x %>%
     filter(lang == 'rus') %>%

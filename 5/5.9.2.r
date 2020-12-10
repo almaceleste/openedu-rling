@@ -1,3 +1,6 @@
+# Воспользуйтесь пакетами gutenbergr и tidytext, чтобы ответить на вопрос, в
+# каком из текстов Люиса Кэррэла he встречается чаще чем she?
+
 library(tidyverse)
 library(gutenbergr)
 library(tidytext)

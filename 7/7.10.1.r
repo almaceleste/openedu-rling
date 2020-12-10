@@ -4,10 +4,11 @@
 # read it) и эпистемическое (you must be kidding). Проанализируйте датасет и
 # определите распределение значений какого глагола различно в британском и
 # американском английском.
+# https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/coates_leech.csv
 
 library(tidyverse)
 
-x <- read_csv('https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/coates_leech.csv')
+x <- read_csv('./datasets/coates_leech.csv')
 
 must <- x %>%
     filter(word == 'must')

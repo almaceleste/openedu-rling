@@ -1,3 +1,12 @@
+# Сравните количество именных классов в двух базах данных: WALS
+# (wals.feature("30A")) и AUTOTYP (autotyp.feature("Gender")). Приведите
+# значения к шкале (0 vs. 2 vs. 3 vs. 4 vs. > 4) (обратите внимание на столбец
+# Gender.Presence в базе данных Autotyp, если там FALSE, значит исследователь
+# утверждает, что в языке 0 классов, правда иногда там NA, поменяйте его на
+# TRUE, если в столбце Gender.n есть какое-то значение), уберите языки с
+# пропущенными значениями и сравните значения языков, попавших в обе базы
+# данных. В ответе приведите долю языков с разным значениями.
+
 library(tidyverse)
 library(lingtypology)
 
@@ -41,4 +50,4 @@ inner_join(wals.gender, autotyp.gender) %>%
 # View(autotyp.feature('Gender'))
 # View(inner_join(wals.gender, autotyp.gender))
 
-10/125
+10 / 125

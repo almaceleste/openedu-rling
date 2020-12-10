@@ -1,6 +1,14 @@
+# В работе [Hatano, Kitamura, Takemoto, Mokhtari, Honda, Masaki 2012]
+# исследовалась длина голосового тракта при произнесении разных гласных
+# (переменные a.vtl, i.vtl…). В исследовании приняли участие 15 носителей
+# японского языка. В датасет записаны их рост (body.height) и возраст (age).
+# Напишите скрипт, который максимаально точно воспроизводит график и приложите
+# его и свой код в качестве решения.
+# https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/data.japanese.vocal.tract.length.csv
+
 library(tidyverse)
 
-x <- read_csv("https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/data.japanese.vocal.tract.length.csv")
+x <- read_csv('datasets/data.japanese.vocal.tract.length.csv')
 
 x %>%
     # сокращаем имена столбцов для более удобного отображения на графике
@@ -29,7 +37,8 @@ tmp %>%
         bins = nclass.Sturges(tmp$length),
         show.legend = FALSE) +
     facet_wrap(~vowel) +
-    # изменяем оформление некоторых элементов графика для улучшения читабельности
+    # изменяем оформление некоторых элементов графика для улучшения
+    # читабельности
     labs(
         x = 'length of the vocal tract',
         caption = 'data from [Hatano et.al 2012]'
