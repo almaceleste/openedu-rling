@@ -17,6 +17,8 @@
 # прилагательным, опубликованной в 2018 году.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/Kosheleva_2016.csv
 
+# gen
+
 library(tidyverse)
 
 x <- read_csv('datasets/Kosheleva_2016.csv')

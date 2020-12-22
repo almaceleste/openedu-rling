@@ -7,6 +7,8 @@
 # В ответе приведите AIC лучшей модели.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_long_vowels.csv
 
+# 942.9765
+
 library(tidyverse)
 
 vowels <- read_csv('datasets/phoible_long_vowels.csv')

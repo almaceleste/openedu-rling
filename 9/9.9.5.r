@@ -8,6 +8,8 @@
 # иметь долгие гласные, если в языке 15 гласных.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_long_vowels.csv
 
+# 0.6181623
+
 library(tidyverse)
 
 vowels <- read_csv('datasets/phoible_long_vowels.csv')

@@ -8,6 +8,8 @@
 #   абруптивные, если в языке 15 гласных и он находится в Африке.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_long_vowels.csv
 
+# 0.6230159
+
 library(tidyverse)
 
 vowels <- read_csv('datasets/phoible_long_vowels.csv')

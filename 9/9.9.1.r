@@ -7,6 +7,8 @@
 # В ответе приведите AIC лучшей модели.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_ejectives.csv
 
+# 539.7573
+
 library(tidyverse)
 
 ejectives <- read_csv('datasets/phoible_ejectives.csv')

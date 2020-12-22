@@ -8,6 +8,8 @@
 # абруптивные, если в языке 40 согласных и он находится в Северной Америке.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_ejectives.csv
 
+# 0.7220758
+
 library(tidyverse)
 
 ejectives <- read_csv('datasets/phoible_ejectives.csv')

@@ -8,6 +8,8 @@
 # иметь абруптивные, если в языке 40 согласных.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/phoible_ejectives.csv
 
+# 0.2146925
+
 library(tidyverse)
 
 ejectives <- read_csv('datasets/phoible_ejectives.csv')
