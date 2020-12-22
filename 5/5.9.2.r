@@ -1,13 +1,17 @@
 # Воспользуйтесь пакетами gutenbergr и tidytext, чтобы ответить на вопрос, в
 # каком из текстов Люиса Кэррэла he встречается чаще чем she?
+# варианты:
+# - Alice's Adventures in Wonderland, gutenberg_id 11
+# - Through the Looking-Glass, gutenberg_id 12
+
+# ни в одном из них
 
 library(tidyverse)
 library(gutenbergr)
 library(tidytext)
 
-gutenberg_metadata %>%
-    select(author) %>%
-    slice(grep('Carroll', author)) # %>%
+# gutenberg_metadata %>%
+#     filter(author == 'Carroll, Lewis')
 
 alice <- "Alice's Adventures in Wonderland"
 glass <- "Through the Looking-Glass"
@@ -22,7 +26,7 @@ glass_text <- gutenberg_download(
         select(gutenberg_id)
 )
 
-she.he <- function(x) {
+she_he <- function(x) {
     x %>%
         unnest_tokens(word, text) %>%
         count(word) %>%
@@ -31,6 +35,6 @@ she.he <- function(x) {
 }
 
 cat("\n", alice, "\n")
-she.he(alice_text)
+she_he(alice_text)
 cat("\n", glass, "\n")
-she.he(glass_text)
+she_he(glass_text)
