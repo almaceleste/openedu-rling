@@ -8,6 +8,8 @@
 # perceived.as.homo. Приведите скорректированный R-квадрат получившейся модели.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/orientation.csv
 
+# 0.7311
+
 library(tidyverse)
 
 sexuality <- read_csv('datasets/orientation.csv')
