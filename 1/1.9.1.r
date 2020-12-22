@@ -5,6 +5,6 @@
 # ∫(0,π/2)sin⁡3(x)/(sin⁡3(x)+cos⁡3(x))*dx
 
 f <- function(x) {
-  sin(x)^3/(sin(x)^3+cos(x)^3)
+  sin(x)^3 / (sin(x)^3 + cos(x)^3)
 }
-integrate(f, 0, pi/2)
+integrate(f, 0, pi / 2)
