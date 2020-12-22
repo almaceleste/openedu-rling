@@ -2,7 +2,7 @@
 # строчек кода):
 # ∫(−1,1)(1+2×x²)×e(x²)
 
-my_function <- function(x){
-  (1+2*x^2)*exp(x^2)
+my_function <- function(x) {
+  (1 + 2 * x^2) * exp(x^2)
 }
-integrate(my_function,-1,1)
+integrate(my_function, -1, 1)
