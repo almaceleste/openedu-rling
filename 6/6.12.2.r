@@ -10,6 +10,8 @@
 # Пример ответа: t = -3.9628, df = 8, p-value = 0.004161
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/kuban_speech_rate.csv
 
+# t = -5.2869, df = 8, p-value = 0.00074
+
 library(tidyverse)
 
 moroz <- read_csv('datasets/kuban_speech_rate.csv')

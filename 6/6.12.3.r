@@ -6,4 +6,6 @@
 # (http://sails.clld.org/parameters/NP901). Предполагаемые распределения — взяты
 # из WALS (http://wals.info/feature/85A).
 
+# 4.165e-12
+
 binom.test(5, (59 + 5 + 11), .43)

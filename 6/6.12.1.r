@@ -5,6 +5,8 @@
 # получилось наибольший доверительный интервал. Датасет доступен здесь.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/iclandic.aspirated.csv
 
+# bte03
+
 library(tidyverse)
 
 coretta <- read_tsv('datasets/iclandic.aspirated.csv')
