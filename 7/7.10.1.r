@@ -6,6 +6,8 @@
 # американском английском.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/coates_leech.csv
 
+# must (решение не найдено)
+
 library(tidyverse)
 
 x <- read_csv('./datasets/coates_leech.csv')

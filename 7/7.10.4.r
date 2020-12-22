@@ -6,6 +6,8 @@
 # различается?
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/slavic_case_alternation.csv
 
+# в русском
+
 library(tidyverse)
 
 x <- read_tsv('datasets/slavic_case_alternation.csv')

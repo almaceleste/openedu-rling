@@ -5,11 +5,13 @@
 # согласным, какая вероятность получить результаты, представленные в PHOIBLE?
 # Приведите соответствующее p-value.
 
+# 0.004612549 (~0.004613)
+
 library(tidyverse)
 
-chisq.test(c(419, 2155), p = c(97, 567))
+# chisq.test(c(419, 2155), p = c(97, 567))
 
-t.test(df, mu = e)
+# t.test(df, mu = e)
 
 # choksy bimon
 expected_uvul  <- 97 / 567 # WALS
@@ -17,23 +19,23 @@ n <- 2155
 observed_uvul  <- 419
 binom.test(observed_uvul, n, expected_uvul)
 
-# choksy chisq
-df <-
-    data.frame(
-        row.names = c("WALS", "PHOIBLE"),
-        uvul = c(97, 419),
-        no_uvul = c(567 - 97, 2155 - 419)
-)
+# # choksy chisq
+# df <-
+#     data.frame(
+#         row.names = c("WALS", "PHOIBLE"),
+#         uvul = c(97, 419),
+#         no_uvul = c(567 - 97, 2155 - 419)
+# )
 
-df
-chisq.test(df)
+# df
+# chisq.test(df)
 
-chisq.test(df, p = c(e, e))
+# chisq.test(df, p = c(e, e))
 
-# manual chisq
-e <- 97 / 567
-o <- 419 / 2155
+# # manual chisq
+# e <- 97 / 567
+# o <- 419 / 2155
 
-chisq.test(c(419, (2155 - 419)), p = c(e, e), rescale.p = TRUE)
+# chisq.test(c(419, (2155 - 419)), p = c(e, e), rescale.p = TRUE)
 
-chisq <- (o - e)^2 / e
+# chisq <- (o - e)^2 / e

@@ -3,6 +3,8 @@
 # Пирсона между переменными
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/bnc_pron.csv
 
+# 0.8028283
+
 library(tidyverse)
 
 x <- read_csv('datasets/bnc_pron.csv')

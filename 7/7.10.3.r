@@ -6,6 +6,8 @@
 # Датасет доступен здесь.
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/iclandic.aspirated.csv
 
+# brs02 (?)
+
 library(tidyverse)
 
 x <- read_tsv('datasets/iclandic.aspirated.csv')
