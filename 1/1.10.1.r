@@ -3,5 +3,5 @@
 
 install.packages('phonTools')
 library(phonTools)
-pickIPA(n=1)
+pickIPA(n = 1)
 detach(phonTools)
