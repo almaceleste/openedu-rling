@@ -11,6 +11,8 @@
 # этот процент больше всего?
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/daghestanian_multilingualism.csv
 
+# Arkhit
+
 library(tidyverse)
 
 x <- read_csv('datasets/daghestanian_multilingualism.csv')

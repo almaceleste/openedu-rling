@@ -2,6 +2,8 @@
 # рожденных до 1919 года. В скольких селениях полученное значение больше 0.1?
 # https://raw.githubusercontent.com/agricolamz/r_on_line_course_data/master/daghestanian_multilingualism.csv
 
+# 9 (решение не найдено)
+
 library(tidyverse)
 
 x <- read_csv('datasets/daghestanian_multilingualism.csv')
